@@ -5,11 +5,11 @@
 <!--[if (gt IE 8)|(gt IEMobile 7)|!(IEMobile)|!(IE)]><!--><html class="no-js" lang="en"><!--<![endif]-->
 <head>
   <meta charset="utf-8">
-  <title>Category: LaTex学习笔记 - Fire-Fly</title>
+  <title>ubuntu问题（1）挂起再重启网络无法连接 - Fire-Fly</title>
   <meta name="author" content="Derin">
 
   
-  <meta name="description" content="Category: LaTex学习笔记">
+  <meta name="description" content="问题描述： 在ubuntu系统下使用 &lt; 挂起 &gt; 功能，再重新唤醒系统后，发现网络无法使用，并且再点击 &lt; 网络 &gt; 中的 &lt; 启动联网 &gt; 仍然无法使用。 解决方法： 修改&#8217;&lt;\etc\default\acpi-support>&lsquo &hellip;">
   
 
   <!-- http://t.co/dKP3o1e -->
@@ -18,7 +18,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
   
-  <link rel="canonical" href="http://Derin.github.ioblog/categories/latexxue-xi-bi-ji">
+  <link rel="canonical" href="http://Derin.github.io/blog/2013/10/28/ubuntuwen-ti-%281%29gua-qi-zai-zhong-qi-wang-luo-wu-fa-lian-jie">
   <link href="/favicon.png" rel="icon">
   <link href="/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css">
   <link href="/atom.xml" rel="alternate" title="Fire-Fly" type="application/atom+xml">
@@ -64,35 +64,91 @@
   <div id="main">
     <div id="content">
       <div>
-<article role="article">
+<article class="hentry" role="article">
   
   <header>
-    <h1 class="entry-title">Category: LaTex学习笔记</h1>
+    
+      <h1 class="entry-title">Ubuntu问题（1）挂起再重启网络无法连接</h1>
+    
+    
+      <p class="meta">
+        
+
+
+
+
+
+
+
+
+  
+
+
+<time datetime="2013-10-28T16:23:00+08:00" pubdate data-updated="true">Oct 28<span>th</span>, 2013</time>
+        
+      </p>
     
   </header>
-  
-  <div id="blog-archives" class="category">
 
 
+<div class="entry-content"><h2>问题描述：</h2>
 
-  
-  <h2>2013</h2>
+<p>在ubuntu系统下使用 <code>&lt; 挂起 &gt;</code> 功能，再重新唤醒系统后，发现网络无法使用，并且再点击 <code>&lt; 网络 &gt;</code> 中的 <code>&lt; 启动联网 &gt;</code> 仍然无法使用。</p>
 
-<article>
-  
-<h1><a href="/blog/2013/10/26/latexxue-xi-bi-ji-1-qi-yin/">LaTex学习笔记(1)--起因</a></h1>
-<time datetime="2013-10-26T22:26:00+08:00" pubdate><span class='month'>Oct</span> <span class='day'>26</span> <span class='year'>2013</span></time>
+<h2>解决方法：</h2>
 
-<footer>
-  <span class="categories">posted in <a class='category' href='/blog/categories/latexxue-xi-bi-ji/'>LaTex学习笔记</a></span>
-</footer>
+<ul>
+<li><p>修改&#8217;&lt;\etc\default\acpi-support>&lsquo; 文件</p>
+
+<p>  sudo vim \etc\default\acpi-support</p></li>
+</ul>
 
 
-</article>
-
+<p>将其中的 <code>STOP_SERVICES=</code> 改为 <code>STOP_SERVICES="networking"</code></p>
 </div>
 
+
+  <footer>
+    <p class="meta">
+      
   
+
+<span class="byline author vcard">Posted by <span class="fn">Derin</span></span>
+
+      
+
+
+
+
+
+
+
+
+  
+
+
+<time datetime="2013-10-28T16:23:00+08:00" pubdate data-updated="true">Oct 28<span>th</span>, 2013</time>
+      
+
+
+    </p>
+    
+      <div class="sharing">
+  
+  <a href="//twitter.com/share" class="twitter-share-button" data-url="http://Derin.github.io/blog/2013/10/28/ubuntuwen-ti-%281%29gua-qi-zai-zhong-qi-wang-luo-wu-fa-lian-jie/" data-via="" data-counturl="http://Derin.github.io/blog/2013/10/28/ubuntuwen-ti-%281%29gua-qi-zai-zhong-qi-wang-luo-wu-fa-lian-jie/" >Tweet</a>
+  
+  
+  
+</div>
+
+    
+    <p class="meta">
+      
+        <a class="basic-alignment left" href="/blog/2013/10/26/latexxue-xi-bi-ji-1-qi-yin/" title="Previous Post: LaTex学习笔记(1)--起因">&laquo; LaTex学习笔记(1)--起因</a>
+      
+      
+    </p>
+  </footer>
 </article>
 
 </div>
