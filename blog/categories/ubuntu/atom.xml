@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+
+  <title><![CDATA[Category: Ubuntu | Fire-Fly]]></title>
+  <link href="http://Derin.github.io/blog/categories/ubuntu/atom.xml" rel="self"/>
+  <link href="http://Derin.github.io/"/>
+  <updated>2013-10-28T17:10:10+08:00</updated>
+  <id>http://Derin.github.io/</id>
+  <author>
+    <name><![CDATA[Derin]]></name>
+    
+  </author>
+  <generator uri="http://octopress.org/">Octopress</generator>
+
+  
+  <entry>
+    <title type="html"><![CDATA[ubuntu问题（1）挂起再重启网络无法连接]]></title>
+    <link href="http://Derin.github.io/blog/2013/10/28/ubuntuwen-ti-%281%29gua-qi-zai-zhong-qi-wang-luo-wu-fa-lian-jie/"/>
+    <updated>2013-10-28T16:23:00+08:00</updated>
+    <id>http://Derin.github.io/blog/2013/10/28/ubuntuwen-ti-(1)gua-qi-zai-zhong-qi-wang-luo-wu-fa-lian-jie</id>
+    <content type="html"><![CDATA[<h2>问题描述：</h2>
+
+<p>在ubuntu系统下使用 <code>&lt; 挂起 &gt;</code> 功能，再重新唤醒系统后，发现网络无法使用，并且再点击 <code>&lt; 网络 &gt;</code> 中的 <code>&lt; 启动联网 &gt;</code> 仍然无法使用。</p>
+
+<h2>解决方法：</h2>
+
+<ul>
+<li><p>修改'&lt;\etc\default\acpi-support>&lsquo; 文件</p>
+
+<p>  sudo vim \etc\default\acpi-support</p></li>
+</ul>
+
+
+<p>将其中的 <code>STOP_SERVICES=</code> 改为 <code>STOP_SERVICES="networking"</code></p>
+]]></content>
+  </entry>
+  
+</feed>
