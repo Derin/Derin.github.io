@@ -3,7 +3,7 @@ layout: post
 title: "ubuntu问题（1）挂起再重启网络无法连接"
 date: 2013-10-28 16:23
 comments: true
-categories: 
+categories: Ubuntu
 ---
 ##问题描述：
 在ubuntu系统下使用 `< 挂起 >` 功能，再重新唤醒系统后，发现网络无法使用，并且再点击 `< 网络 >` 中的 `< 启动联网 >` 仍然无法使用。
